@@ -14,6 +14,11 @@
 		4508ABEE193D7BDA00358388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4508ABEC193D7BDA00358388 /* Main.storyboard */; };
 		4508ABF0193D7BDA00358388 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4508ABEF193D7BDA00358388 /* Images.xcassets */; };
 		4508ABFC193D7BDB00358388 /* ClockWidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4508ABFB193D7BDB00358388 /* ClockWidgetTests.m */; };
+		4508AC0C193D7BF200358388 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4508AC0B193D7BF200358388 /* NotificationCenter.framework */; };
+		4508AC12193D7BF200358388 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4508AC11193D7BF200358388 /* TodayViewController.m */; };
+		4508AC14193D7BF200358388 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4508AC13193D7BF200358388 /* MainInterface.storyboard */; };
+		4508AC17193D7BF200358388 /* de.sn0wfreeze.ClockWidget.Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4508AC09193D7BF200358388 /* de.sn0wfreeze.ClockWidget.Widget.appex */; };
+		4508AC21193D8E5700358388 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4508AC20193D8E5700358388 /* ClockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +29,35 @@
 			remoteGlobalIDString = 4508ABDB193D7BDA00358388;
 			remoteInfo = ClockWidget;
 		};
+		4508AC15193D7BF200358388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4508ABD4193D7BDA00358388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4508AC08193D7BF200358388;
+			remoteInfo = Widget;
+		};
+		4508AC18193D7BF200358388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4508ABD4193D7BDA00358388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4508AC08193D7BF200358388;
+			remoteInfo = Widget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4508AC1D193D7BF200358388 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4508AC17193D7BF200358388 /* de.sn0wfreeze.ClockWidget.Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4508ABDC193D7BDA00358388 /* ClockWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +73,14 @@
 		4508ABF5193D7BDB00358388 /* ClockWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4508ABFA193D7BDB00358388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4508ABFB193D7BDB00358388 /* ClockWidgetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockWidgetTests.m; sourceTree = "<group>"; };
+		4508AC09193D7BF200358388 /* de.sn0wfreeze.ClockWidget.Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = de.sn0wfreeze.ClockWidget.Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4508AC0B193D7BF200358388 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4508AC0F193D7BF200358388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4508AC10193D7BF200358388 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		4508AC11193D7BF200358388 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		4508AC13193D7BF200358388 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		4508AC1F193D8E5700358388 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		4508AC20193D8E5700358388 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +98,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4508AC06193D7BF200358388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4508AC0C193D7BF200358388 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +114,8 @@
 			children = (
 				4508ABDE193D7BDA00358388 /* ClockWidget */,
 				4508ABF8193D7BDB00358388 /* ClockWidgetTests */,
+				4508AC0D193D7BF200358388 /* Widget */,
+				4508AC0A193D7BF200358388 /* Frameworks */,
 				4508ABDD193D7BDA00358388 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +125,7 @@
 			children = (
 				4508ABDC193D7BDA00358388 /* ClockWidget.app */,
 				4508ABF5193D7BDB00358388 /* ClockWidgetTests.xctest */,
+				4508AC09193D7BF200358388 /* de.sn0wfreeze.ClockWidget.Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +171,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4508AC0A193D7BF200358388 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4508AC0B193D7BF200358388 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4508AC0D193D7BF200358388 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4508AC1F193D8E5700358388 /* ClockView.h */,
+				4508AC20193D8E5700358388 /* ClockView.m */,
+				4508AC10193D7BF200358388 /* TodayViewController.h */,
+				4508AC11193D7BF200358388 /* TodayViewController.m */,
+				4508AC13193D7BF200358388 /* MainInterface.storyboard */,
+				4508AC0E193D7BF200358388 /* Supporting Files */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		4508AC0E193D7BF200358388 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4508AC0F193D7BF200358388 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +210,13 @@
 				4508ABD8193D7BDA00358388 /* Sources */,
 				4508ABD9193D7BDA00358388 /* Frameworks */,
 				4508ABDA193D7BDA00358388 /* Resources */,
+				4508AC1D193D7BF200358388 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4508AC16193D7BF200358388 /* PBXTargetDependency */,
+				4508AC19193D7BF200358388 /* PBXTargetDependency */,
 			);
 			name = ClockWidget;
 			productName = ClockWidget;
@@ -157,6 +241,23 @@
 			productReference = 4508ABF5193D7BDB00358388 /* ClockWidgetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4508AC08193D7BF200358388 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4508AC1A193D7BF200358388 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				4508AC05193D7BF200358388 /* Sources */,
+				4508AC06193D7BF200358388 /* Frameworks */,
+				4508AC07193D7BF200358388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 4508AC09193D7BF200358388 /* de.sn0wfreeze.ClockWidget.Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +273,9 @@
 					4508ABF4193D7BDB00358388 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 4508ABDB193D7BDA00358388;
+					};
+					4508AC08193D7BF200358388 = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -190,6 +294,7 @@
 			targets = (
 				4508ABDB193D7BDA00358388 /* ClockWidget */,
 				4508ABF4193D7BDB00358388 /* ClockWidgetTests */,
+				4508AC08193D7BF200358388 /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +313,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4508AC07193D7BF200358388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4508AC14193D7BF200358388 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +346,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4508AC05193D7BF200358388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4508AC12193D7BF200358388 /* TodayViewController.m in Sources */,
+				4508AC21193D8E5700358388 /* ClockView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +362,16 @@
 			isa = PBXTargetDependency;
 			target = 4508ABDB193D7BDA00358388 /* ClockWidget */;
 			targetProxy = 4508ABF6193D7BDB00358388 /* PBXContainerItemProxy */;
+		};
+		4508AC16193D7BF200358388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4508AC08193D7BF200358388 /* Widget */;
+			targetProxy = 4508AC15193D7BF200358388 /* PBXContainerItemProxy */;
+		};
+		4508AC19193D7BF200358388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4508AC08193D7BF200358388 /* Widget */;
+			targetProxy = 4508AC18193D7BF200358388 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -389,6 +521,32 @@
 			};
 			name = Release;
 		};
+		4508AC1B193D7BF200358388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "de.sn0wfreeze.ClockWidget.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4508AC1C193D7BF200358388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "de.sn0wfreeze.ClockWidget.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -414,6 +572,14 @@
 			buildConfigurations = (
 				4508AC03193D7BDB00358388 /* Debug */,
 				4508AC04193D7BDB00358388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4508AC1A193D7BF200358388 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4508AC1B193D7BF200358388 /* Debug */,
+				4508AC1C193D7BF200358388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
