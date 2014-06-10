@@ -39,7 +39,7 @@
     [_firstTime setTextColor:[UIColor whiteColor]];
     [_secondCity setTextColor:[UIColor whiteColor]];
     [_secondTime setTextColor:[UIColor whiteColor]];
-    
+    [self updateTime:nil]; 
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTime:) userInfo:nil repeats:YES];
     
    }
